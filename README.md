@@ -26,14 +26,16 @@ Think flipping analysis, medical triage, EVA planning, or spacecraft anomaly han
 ---
 
 ## 📁 Folder Structure (planned)
+<pre>
 /src
-/core         # core logic, data handlers
-/ml           # model training + scoring
-/rules        # custom logic modules
-/ui           # optional frontend (React or HTMX)
+  /core         # core logic, data handlers
+  /ml           # model training + scoring
+  /rules        # custom logic modules
+  /ui           # optional frontend (React or HTMX)
 main.py         # entry point
 requirements.txt
 README.md
+</pre>
 
 ---
 
