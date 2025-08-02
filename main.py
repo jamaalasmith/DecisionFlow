@@ -1,5 +1,5 @@
 from src.core.logging import log_step, get_trace
-from src.rules.oxygen_rule import check_oxygen
+from src.rules.oxygen_rule import OxygenRule
 
 def main():
    print("🚀 DecisionFlow core initialized")
@@ -14,8 +14,8 @@ def main():
       print(entry)
 
    sample = {"patient_id": "X01", "oxygen_saturation": 87}
-   alert, reason = check_oxygen(sample)
-
+   rule = OxygenRule()
+   alert, reason = rule.check(sample)
    if alert:
       print(f"🚨 ALERT for {sample['patient_id']}: {reason}")
    else:
